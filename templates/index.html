@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Demand Prediction</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        input {
+            margin: 5px;
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        h3 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Inventory Demand Prediction</h1>
+
+<form action="/predict" method="post">
+
+    <!-- 24 Inputs -->
+    <input type="text" name="f1" placeholder="Feature 1" required><br>
+    <input type="text" name="f2" placeholder="Feature 2" required><br>
+    <input type="text" name="f3" placeholder="Feature 3" required><br>
+    <input type="text" name="f4" placeholder="Feature 4" required><br>
+    <input type="text" name="f5" placeholder="Feature 5" required><br>
+    <input type="text" name="f6" placeholder="Feature 6" required><br>
+    <input type="text" name="f7" placeholder="Feature 7" required><br>
+    <input type="text" name="f8" placeholder="Feature 8" required><br>
+    <input type="text" name="f9" placeholder="Feature 9" required><br>
+    <input type="text" name="f10" placeholder="Feature 10" required><br>
+    <input type="text" name="f11" placeholder="Feature 11" required><br>
+    <input type="text" name="f12" placeholder="Feature 12" required><br>
+    <input type="text" name="f13" placeholder="Feature 13" required><br>
+    <input type="text" name="f14" placeholder="Feature 14" required><br>
+    <input type="text" name="f15" placeholder="Feature 15" required><br>
+    <input type="text" name="f16" placeholder="Feature 16" required><br>
+    <input type="text" name="f17" placeholder="Feature 17" required><br>
+    <input type="text" name="f18" placeholder="Feature 18" required><br>
+    <input type="text" name="f19" placeholder="Feature 19" required><br>
+    <input type="text" name="f20" placeholder="Feature 20" required><br>
+    <input type="text" name="f21" placeholder="Feature 21" required><br>
+    <input type="text" name="f22" placeholder="Feature 22" required><br>
+    <input type="text" name="f23" placeholder="Feature 23" required><br>
+    <input type="text" name="f24" placeholder="Feature 24" required><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
